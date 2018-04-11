@@ -53,18 +53,40 @@
     font-weight: bold;
 }
 
+.doc-card-title__link {
+    display: block;
+    color: #000;
+}
+
+.doc-card-title__link:hover {
+    color: #337ab7;
+    text-decoration: none;
+}
+
 .doc-card-body {
     padding: 15px;
 }
 
 .doc-card-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.doc-card-footer-date {
     padding: 15px;
 }
 
-.doc-card-footer__date {
-
+.doc-card-footer-application {
+    
 }
 
-.doc-card-footer__editor {
+.doc-card-footer-application__link {
+    display: block;
+    color: #777;
+    padding: 15px;
+}
 
+.doc-card-footer-application__link:hover {
+    color: #337ab7;
 }
