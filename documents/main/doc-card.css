@@ -13,6 +13,7 @@
 }
 
 .doc-card {
+    height: 100%;
     display: flex;
     flex-direction: column;
     background-color: #f5f5f5;
@@ -48,9 +49,14 @@
 }
 
 .doc-card-title {
-    padding: 0 15px;
+    padding: 15px;
+    padding-bottom: 0;
     font-size: 20px;
     font-weight: bold;
+}
+
+.doc-card_controlled .doc-card-title {
+    padding-top: 0;
 }
 
 .doc-card-title__link {
@@ -64,7 +70,23 @@
 }
 
 .doc-card-body {
-    padding: 15px;
+    padding: 0 15px;
+    padding-top: 15px;
+}
+
+.doc-card-status {
+    display: flex;
+    flex-direction: row;
+    padding: 0 15px;
+    padding-top: 15px;
+}
+
+.doc-card-status__item {
+    padding-right: 10px;
+}
+
+.doc-card-status__item .label {
+    font-size: 14px;
 }
 
 .doc-card-footer {
