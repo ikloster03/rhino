@@ -1,0 +1,74 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    padding-top: 60px;
+    padding-bottom: 10px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #f5f5f5;
+}
+
+
+body>.container {
+    padding: 60px 15px 0;
+}
+
+.footer>.container .text-muted {
+    margin: 20px 0;
+}
+
+.footer>.container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+code {
+    font-size: 80%;
+}
+
+.c-search {
+    padding-top: 50px;
+}
+
+.container-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.block-logo {
+    display: block;
+    padding: 10px 15px;
+
+}
+
+.block-menu {
+    display: block;
+    padding: 11px 15px;
+}
+
+.icon-menu::before {
+    font-size: 22px;
+    color: #777;
+}
+
+.group-buttons {
+
+}
+
+.w-button {
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+}
