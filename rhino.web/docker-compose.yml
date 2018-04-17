@@ -85,7 +85,7 @@ services:
     image: ambientum/php:7.2-nginx
     container_name: sandbox-app
     volumes:
-      - .:/var/www/app
+      - .:/var/www/projects/rhino/rhino.web
     ports:
       - "11011:8080"
     links:
@@ -99,7 +99,7 @@ services:
     container_name: sandbox-queue
     command: php artisan queue:listen
     volumes:
-      - .:/var/www/app
+      - .:/var/www/projects/rhino/rhino.web
     links:
       - mysql
       - cache
