@@ -21,7 +21,6 @@ class CreateEntryDescriptionTable extends Migration
             $table->string('description')->nullable();
             $table->tinyInteger('amount_pages')->nullable();
             $table->tinyInteger('category')->default(0);
-            $table->tinyInteger('category')->default(0);
 
 
             $table->timestamps();
