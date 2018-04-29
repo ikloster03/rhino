@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/rhino.web/Modules" isTestSource="false" packagePrefix="Modules\" />
+      <sourceFolder url="file://$MODULE_DIR$/rhino.web/tests" isTestSource="true" packagePrefix="Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/rhino.web/app" isTestSource="false" packagePrefix="App\" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/dnoegel/php-xdg-base-dir" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/doctrine/inflector" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/doctrine/instantiator" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/doctrine/lexer" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/egulias/email-validator" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/erusev/parsedown" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/fideloper/proxy" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/filp/whoops" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/fzaninotto/faker" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/hamcrest/hamcrest-php" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/jakub-onderka/php-console-color" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/jakub-onderka/php-console-highlighter" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/laravel/framework" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/laravel/tinker" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/league/flysystem" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/mockery/mockery" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/monolog/monolog" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/mtdowling/cron-expression" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/myclabs/deep-copy" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/nesbot/carbon" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/nikic/php-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/nwidart/laravel-modules" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/paragonie/random_compat" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/phar-io/manifest" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/phar-io/version" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/phpdocumentor/reflection-common" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/phpdocumentor/reflection-docblock" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/phpdocumentor/type-resolver" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/phpspec/prophecy" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/phpunit/php-code-coverage" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/phpunit/php-file-iterator" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/phpunit/php-text-template" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/phpunit/php-timer" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/phpunit/php-token-stream" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/phpunit/phpunit" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/phpunit/phpunit-mock-objects" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/psr/container" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/psr/simple-cache" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/psy/psysh" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/ramsey/uuid" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/sebastian/code-unit-reverse-lookup" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/sebastian/comparator" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/sebastian/diff" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/sebastian/environment" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/sebastian/exporter" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/sebastian/global-state" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/sebastian/object-enumerator" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/sebastian/object-reflector" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/sebastian/recursion-context" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/sebastian/resource-operations" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/sebastian/version" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/swiftmailer/swiftmailer" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/symfony/console" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/symfony/css-selector" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/symfony/debug" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/symfony/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/symfony/finder" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/symfony/http-foundation" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/symfony/http-kernel" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/symfony/polyfill-php70" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/symfony/process" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/symfony/routing" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/symfony/thanks" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/symfony/translation" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/symfony/var-dumper" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/theseer/tokenizer" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/tijsverkoyen/css-to-inline-styles" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/vlucas/phpdotenv" />
+      <excludeFolder url="file://$MODULE_DIR$/rhino.web/vendor/webmozart/assert" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
