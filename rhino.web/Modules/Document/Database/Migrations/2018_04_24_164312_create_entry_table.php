@@ -20,13 +20,15 @@ class CreateEntryTable extends Migration
             $table->integer('exemplar_id')->nullable()->comment= "id вхождения созданного экземпляра";
             $table->integer('person_id')->nullable()->comment="сотрудник работающий с документом";
             $table->integer('company_id')->nullable()->comment="сотрудник работающий с документом";
-            $table->integer('company_got_id')->comment="";
-            $table->integer('person_got_id')->comment="";
+            $table->integer('company_got_id')->nullable()->comment="";
+            $table->integer('person_got_id')->nullable()->comment="";
             $table->integer('letter_id')->nullable()->comment="ссылка на информаию о письме";
             $table->integer('document_id')->nullable()->comment="ссылка на информацию о документе";
-            $table->integer('person_printed_id')->comment="";
-            $table->integer('company_printed_id')->comment="";
-            $table->integer('person_signed_id')->comment="";
+            $table->integer('person_printed_id')->nullable()->comment="";
+            $table->integer('company_printed_id')->nullable()->comment="";
+            $table->integer('person_signed_id')->nullable()->comment="";
+            $table->integer('income_number_id')->nullable()->comment="";
+            $table->integer('local_number_id')->nullable()->comment="";
             $table->timestamps();
         });
     }
