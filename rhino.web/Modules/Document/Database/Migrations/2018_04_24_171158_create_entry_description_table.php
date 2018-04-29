@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateDocumentTable extends Migration
+class CreateEntryDescriptionTable extends Migration
 {
     /**
      * Run the migrations.
@@ -20,7 +20,6 @@ class CreateDocumentTable extends Migration
             $table->string('summary')->nullable();
             $table->string('description')->nullable();
             $table->tinyInteger('amount_pages')->nullable();
-            $table->tinyInteger('category')->default(0);
             $table->tinyInteger('category')->default(0);
 
 
