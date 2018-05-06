@@ -1,42 +1,36 @@
 let mix = require('laravel-mix');
 
-/*
- |--------------------------------------------------------------------------
- | Mix Asset Management
- |--------------------------------------------------------------------------
- |
- | Mix provides a clean, fluent API for defining some Webpack build steps
- | for your Laravel application. By default, we are compiling the Sass
- | file for the application as well as bundling up all the JS files.
- |
- */
-
-mix.setPublicPath('public/assets/');
-mix.setResourceRoot('../');
-mix.webpackConfig({
-    resolve: {
-        alias: {
-
-        }
-    },
-    output: {
-        path: __dirname + "/public/assets"
-    }
-});
 
 
+var mode = process.env.npm_config_mode;
+
+if(mode == 'back' || mode == 'backend'){
+    mix.setPublicPath('dashboard/assets');
+    mix.setResourceRoot('../');
+
+    mix.js('resources/assets/dashboard/js/dashboard.js', 'js/')
+
+    mix.sass('resources/assets/dashboard/scss/app.scss', 'css/app.css');
+
+    mix.browserSync({
+        port: 3000,
+        proxy: 'admin.rhino.test'
+    });
+}else{
+    mix.setPublicPath('public/assets');
+    mix.setResourceRoot('../');
+
+    mix.browserSync({
+        port: 3000,
+        proxy: ''
+    });
+
+}
 
 mix.options({
-    convertToAbsoluteUrls:false,
-    sourceMap: true,
-    processCssUrls: true,
-
     postCss: [
         require('postcss-import'),
         require('postcss-url'),
-        require('postcss-cssnext')({
-            warnForDuplicates:false
-        }),
         require('precss'),
         require('cssnano')({
             reduceIdents: {
@@ -48,7 +42,18 @@ mix.options({
         }),
         require('postcss-clearfix'),
     ],
+
 });
+
+
+
+
 
 mix.version();
 
+
+if(mix.inProduction()){
+
+}else{
+
+}
