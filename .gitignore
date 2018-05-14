@@ -1,4 +1,5 @@
 .idea
+/.idea
 rhino.web/node_modules
 rhino.web/public/hot
 rhino.web/public/storage
