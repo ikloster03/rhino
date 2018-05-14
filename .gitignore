@@ -1,1 +1,15 @@
 .idea
+rhino.web/node_modules
+rhino.web/public/hot
+rhino.web/public/storage
+rhino.web/public/assets
+rhino.web/dashboard/assets
+rhino.web/storage/*.key
+rhino.web/vendor
+rhino.web/.idea
+rhino.web/.vagrant
+rhino.web/Homestead.json
+rhino.web/Homestead.yaml
+rhino.web/npm-debug.log
+rhino.web/yarn-error.log
+rhino.web/.env
