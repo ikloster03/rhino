@@ -6,4 +6,8 @@
     <p>
         This view is loaded from module: {!! config('document.name') !!}
     </p>
+
+    <div id="app">
+        <App></App>
+    </div>
 @stop

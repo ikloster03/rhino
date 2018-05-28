@@ -19,7 +19,7 @@ if(mode == 'back' || mode == 'backend'){
 }else{
     mix.setPublicPath('public/assets');
     mix.setResourceRoot('../');
-
+    mix.js('resources/assets/js/app.js', 'js/')
     mix.browserSync({
         port: 3000,
         proxy: ''
