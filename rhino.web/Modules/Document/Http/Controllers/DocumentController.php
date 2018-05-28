@@ -17,6 +17,11 @@ class DocumentController extends Controller
         return view('document::index');
     }
 
+    public function document()
+    {
+        return view('document::document');
+    }
+
     /**
      * Show the form for creating a new resource.
      * @return Response

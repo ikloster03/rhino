@@ -19,11 +19,13 @@ if(mode == 'back' || mode == 'backend'){
 }else{
     mix.setPublicPath('public/assets');
     mix.setResourceRoot('../');
-    mix.js('resources/assets/js/app.js', 'js/')
-    mix.browserSync({
-        port: 3000,
-        proxy: ''
-    });
+    mix.copyDirectory('resources/assets/frontend/img', 'img');
+    mix.sass('resources/assets/frontend/styles/app.scss', 'css/app.css');
+    // mix.js('resources/assets/js/app.js', 'js/')
+    // mix.browserSync({
+    //     port: 3000,
+    //     proxy: ''
+    // });
 
 }
 
