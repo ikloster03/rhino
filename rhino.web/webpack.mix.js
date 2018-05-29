@@ -21,11 +21,11 @@ if(mode == 'back' || mode == 'backend'){
     mix.setResourceRoot('../');
     mix.copyDirectory('resources/assets/frontend/img', 'img');
     mix.sass('resources/assets/frontend/styles/app.scss', 'css/app.css');
-    // mix.js('resources/assets/js/app.js', 'js/')
-    // mix.browserSync({
-    //     port: 3000,
-    //     proxy: ''
-    // });
+    mix.js('resources/assets/frontend/js/app.js', 'js/');
+    mix.browserSync({
+        port: 3001,
+        proxy: 'rhino.test'
+    });
 
 }
 

@@ -4,4 +4,5 @@ Route::group(['middleware' => 'web', 'prefix' => '', 'namespace' => 'Modules\Doc
 {
     Route::get('/', 'DocumentController@index');
     Route::get('/document', 'DocumentController@document');
+    Route::get('/test', 'DocumentController@test');
 });
