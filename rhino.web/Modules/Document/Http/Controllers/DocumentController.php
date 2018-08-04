@@ -17,13 +17,18 @@ class DocumentController extends Controller
         return view('document::index');
     }
 
+    public function document()
+    {
+        return view('document::document');
+    }
+
     /**
      * Show the form for creating a new resource.
      * @return Response
      */
-    public function create()
+    public function test()
     {
-        return view('document::create');
+        return view('document::test');
     }
 
     /**
