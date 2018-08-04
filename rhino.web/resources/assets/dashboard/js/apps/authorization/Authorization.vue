@@ -12,8 +12,6 @@
                 <div class="panel-body">
                     <div class="col-lg-12">
                         <router-view></router-view>
-
-
                     </div>
                 </div>
             </div>
