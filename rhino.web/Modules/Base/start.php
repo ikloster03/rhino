@@ -15,7 +15,7 @@
 if (!app()->routesAreCached()) {
     require __DIR__ . '/Http/routes.php';
 
-    Route::group(['middleware' => ['web', 'auth.admin']], function () {
+    Route::group(['middleware' => ['web', 'auth.admin'],'domain' => env('DASHBOARD_DOMAIN', 'admin.rhino.dev')], function () {
         require __DIR__ . '/Http/admin.routes.php';
     });
 }
