@@ -16,10 +16,10 @@ if (!app()->routesAreCached()) {
     require __DIR__ . '/Http/routes.user.php';
     require __DIR__ . '/Http/routes.admin.php';
 
-    Route::group(['prefix' => '', 'domain' => env('DASHBOARD_DOMAIN', 'admin.rhino.test'), 'namespace' => 'Modules\User\Http\Controllers'], function () {
+    Route::group(['domain' => env('DASHBOARD_DOMAIN', 'admin.rhino.test'), 'namespace' => 'Modules\User\Http\Controllers'], function () {
         require __DIR__ . '/Http/routes.admin.php';
-        /*Route::group(['prefix' => '/api', 'middleware' => ['web', 'auth.admin']], function () {
+        Route::group(['prefix' => '/api', 'middleware' => ['web', 'auth.admin']], function () {
             require __DIR__ . '/Http/routes.admin.api.php';
-        });*/
+        });
     });
 }

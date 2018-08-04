@@ -8,9 +8,12 @@ if(mode == 'back' || mode == 'backend'){
     mix.setPublicPath('dashboard/assets');
     mix.setResourceRoot('../');
 
-    mix.js('resources/assets/dashboard/js/dashboard.js', 'js/')
+    mix.js('resources/assets/dashboard/js/apps/dashboard/dashboard.js', 'js/');
+    mix.js('resources/assets/dashboard/js/apps/authorization/vue-authorization.js', 'js/');
 
     mix.sass('resources/assets/dashboard/scss/app.scss', 'css/app.css');
+
+    mix.copyDirectory('resources/assets/dashboard/image','dashboard/assets/image/');
 
     mix.browserSync({
         port: 3000,

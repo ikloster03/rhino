@@ -14,7 +14,7 @@ class BaseController extends Controller
      */
     public function index()
     {
-        return view('base::index');
+        return view('base::dashboard.index');
     }
 
     /**

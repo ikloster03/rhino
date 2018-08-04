@@ -4,6 +4,8 @@ namespace Modules\User\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Factory;
+use Modules\User\Repositories\Admin\AdminAuthentication;
+use Config;
 
 class UserServiceProvider extends ServiceProvider
 {
@@ -35,7 +37,17 @@ class UserServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->bind(
+            'Modules\User\Repositories\Admin\AdminAuthentication',
+            function () {
+
+                $repository = new AdminAuthentication('admins');
+                if (! Config::get('app.cache')) {
+                    return $repository;
+                }
+                return new CachePageDecorator($repository);
+            }
+        );
     }
 
     /**

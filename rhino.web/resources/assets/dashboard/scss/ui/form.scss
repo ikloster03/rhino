@@ -1,0 +1,16 @@
+
+
+.inpute{
+  &__message{
+    &_error{
+      font-size: 12px;
+      padding: 5px 0px;
+      padding-bottom: 10px;
+      margin-left: -5px;
+      color: #7F0000;
+      ul{
+        margin: 0px;
+      }
+    }
+  }
+}

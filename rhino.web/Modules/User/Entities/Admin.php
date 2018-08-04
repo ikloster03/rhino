@@ -11,13 +11,30 @@ class Admin extends Model implements AuthenticatableContract,
     AuthorizableContract
 {
     use Authenticatable, Authorizable;
-    protected $table = 'admins';
+    public $timestamps = true;
+    public $type = 1;
+    protected $table = 'admin';
     protected $hidden = array('password');
     protected $fillable = array(
+        'login',
         'name',
         'surname',
         'midname',
         'password',
         'access_level'
     );
+
+    public function getErrors()
+    {
+        return $this->errors;
+    }
+
+    public function toFormData(){
+        return [
+            'name' => $this->name,
+            'surname' => $this->surname,
+            'email' => $this->email,
+            'phone' => $this->phone,
+        ];
+    }
 }
