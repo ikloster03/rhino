@@ -1,5 +1,6 @@
 let mix = require('laravel-mix');
-
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const webpack = require('webpack');
 
 
 var mode = process.env.npm_config_mode;
@@ -22,9 +23,30 @@ if(mode == 'back' || mode == 'backend'){
 }else{
     mix.setPublicPath('public/assets');
     mix.setResourceRoot('../');
-    mix.copyDirectory('resources/assets/frontend/img', 'img');
+    mix.webpackConfig({
+        resolve: {
+            alias: {
+                Api: path.resolve(__dirname, 'resources/assets/frontend/js/api'),
+                UI: path.resolve(__dirname, 'resources/assets/frontend/js/ui'),
+                Apps: path.resolve(__dirname, 'resources/assets/frontend/js/apps'),
+            }
+        },
+        plugins: [
+            new webpack.ContextReplacementPlugin(/moment[/\\]locale$/, /ru/),
+            // new BundleAnalyzerPlugin({
+            //     analyzerMode:'static',
+            //     // analyzerHost: 'activepeople.test',
+            //     // analyzerPort: 8890,
+            //     // generateStatsFile: true,
+            //
+            // })
+        ],
+        devtool: "source-map"
+    })
+    mix.copyDirectory("resources/assets/frontend/img/", "public/assets/images/")
     mix.sass('resources/assets/frontend/styles/app.scss', 'css/app.css');
-    mix.js('resources/assets/frontend/js/app.js', 'js/');
+    mix.js('resources/assets/frontend/js/app.js', 'js/')
+        .extract(["vue", "vuex", "vue-router", "vue-resource"])
     mix.browserSync({
         port: 3001,
         proxy: 'rhino.test'
@@ -41,6 +63,7 @@ mix.options({
             reduceIdents: {
                 keyframes: false
             },
+            zindex: false,
             discardUnused: {
                 keyframes: false
             }
